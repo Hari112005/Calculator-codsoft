@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="outr_frame">
+      <div id="inner_frame">
+        <div id="display" style="color: white; font-size:50px ;margin-right:10px">0</div>
+        <div id="keyboard">
+          <!-- keyboard  options -->
+          <button class="options" onclick="Appendopt('AC')">AC</button>
+          <button class="options" onclick="Appendopt('DEL')">DEL</button>
+          <button class="options" onclick="Appendopt('.')">.</button>
+          <button class="options" onclick="Appendopt('%')">%</button>
+          <!-- keyboard  numeric -->
+          <button class="numeric" onclick="Appendnumeric('1')">1</button>
+          <button class="numeric" onclick="Appendnumeric('2')">2</button>
+          <button class="numeric" onclick="Appendnumeric('3')">3</button>
+          <button class="operator" onclick="Appendoperator('+')">+</button>
+          <button class="numeric" onclick="Appendnumeric('4')">4</button>
+          <button class="numeric" onclick="Appendnumeric('5')">5</button>
+          <button class="numeric" onclick="Appendnumeric('6')">6</button>
+          <button class="operator" onclick="Appendoperator('-')">-</button>
+          <button class="numeric" onclick="Appendnumeric('7')">7</button>
+          <button class="numeric" onclick="Appendnumeric('8')">8</button>
+          <button class="numeric" onclick="Appendnumeric('9')">9</button>
+          <button class="operator" onclick="Appendoperator('*')">*</button>
+          <button class="numeric" onclick="Appendnumeric('0')">0</button>
+          <button class="operator" onclick="Appendoperator('00')">00</button>
+          <button class="operator" onclick="Appendoperator('^')">x^y</button>
+          <button class="operator" onclick="Calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

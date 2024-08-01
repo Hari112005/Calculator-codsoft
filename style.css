@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #05210c;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-auto-columns: 100px;
+    gap: 10px;
+    row-gap: 20px;
+
+
+}
+
+@media(max-width:490px) {
+    #keyboard {
+        display: grid;
+        grid-template-columns: repeat(4, 70px);
+        gap: 8px;
+    }
+
+    #inner_frame {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: max-content;
+    }
+
+    button {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+}
+
+#inner_frame {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    max-width: max-content;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 4px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 8px 1px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+#display {
+    height: 100px;
+    max-width: 430px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 25px;
+    padding-right: 4px;
+    font-weight: bolder;
+
+}
+
+.operator {
+    color: yellowgreen;
+}
+
+.numeric {
+    color: white;
+}
+
+.options {
+    color: yellowgreen;
+}
+
+#outr_frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: bisque;
+}
